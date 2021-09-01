@@ -15,14 +15,14 @@ const valor_controller_1 = require("./valor/valor.controller");
 const valor_service_1 = require("./valor/shared/valor.service");
 const valor_module_1 = require("./valor/valor.module");
 const users_module_1 = require("./user/users.module");
-const users_1 = require("./user/users");
+const users_controller_1 = require("./user/users.controller");
 const user_service_1 = require("./user/shared/user.service");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
     common_1.Module({
         imports: [plano_module_1.PlanoModule, valor_module_1.ValorModule, users_module_1.UsersModule,],
-        controllers: [app_controller_1.AppController, valor_controller_1.ValorController, users_1.UsersController],
+        controllers: [app_controller_1.AppController, valor_controller_1.ValorController, users_controller_1.UsersController],
         providers: [app_service_1.AppService, valor_service_1.ValorService, user_service_1.UserService],
     })
 ], AppModule);

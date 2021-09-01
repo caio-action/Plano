@@ -8,12 +8,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var __param = (this && this.__param) || function (paramIndex, decorator) {
-    return function (target, key) { decorator(target, key, paramIndex); }
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.PlanoController = void 0;
 const common_1 = require("@nestjs/common");
+const user_1 = require("../user/shared/user");
 const plano_service_1 = require("./shared/plano.service");
 let PlanoController = class PlanoController {
     constructor(planoService) {
@@ -22,23 +20,13 @@ let PlanoController = class PlanoController {
     async getAll() {
         return this.planoService.getAll();
     }
-    async getById(id) {
-        return this.planoService.getById(id);
-    }
 };
 __decorate([
-    common_1.Get(),
+    common_1.Get(''),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", Promise)
 ], PlanoController.prototype, "getAll", null);
-__decorate([
-    common_1.Get(':id'),
-    __param(0, common_1.Param('id')),
-    __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Number]),
-    __metadata("design:returntype", Promise)
-], PlanoController.prototype, "getById", null);
 PlanoController = __decorate([
     common_1.Controller('plano'),
     __metadata("design:paramtypes", [plano_service_1.PlanoService])

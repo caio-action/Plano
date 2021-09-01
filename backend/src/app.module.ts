@@ -6,7 +6,7 @@ import { ValorController } from './valor/valor.controller';
 import { ValorService } from './valor/shared/valor.service';
 import { ValorModule } from './valor/valor.module';
 import { UsersModule } from './user/users.module';
-import { UsersController } from './user/users';
+import { UsersController } from './user/users.controller';
 import { UserService } from './user/shared/user.service';
 
 

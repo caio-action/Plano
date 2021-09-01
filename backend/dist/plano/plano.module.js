@@ -15,7 +15,8 @@ let PlanoModule = class PlanoModule {
 PlanoModule = __decorate([
     common_1.Module({
         controllers: [plano_controller_1.PlanoController],
-        providers: [plano_service_1.PlanoService]
+        providers: [plano_service_1.PlanoService],
+        exports: [plano_service_1.PlanoService]
     })
 ], PlanoModule);
 exports.PlanoModule = PlanoModule;

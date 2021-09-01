@@ -1,8 +1,10 @@
 export class Plano {
     
-    id: string|number;
+    id: number;
     nome: string;
     codigo: number
+    reg: string;
+    
        
     
 }

@@ -1,6 +1,6 @@
 import { Plano } from './plano';
 export declare class PlanoService {
-    plano: Plano[];
+    constructor();
+    private plano;
     getAll(): Plano[];
-    getById(id: number): Plano;
 }
